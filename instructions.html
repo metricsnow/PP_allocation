@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use Excel File Processor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 25px;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .step {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        .step strong {
+            color: #2c3e50;
+        }
+        .troubleshooting {
+            background-color: #fff7f7;
+            border-left: 4px solid #e74c3c;
+            padding: 10px 15px;
+            margin-top: 25px;
+            border-radius: 0 5px 5px 0;
+        }
+        .note {
+            background-color: #f0f7fb;
+            border-left: 4px solid #5bc0de;
+            padding: 10px 15px;
+            margin-top: 25px;
+            border-radius: 0 5px 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Use Excel File Processor</h1>
+
+    <h2>You need these files:</h2>
+    <ul>
+        <li>A CSV file with store names</li>
+        <li>An Excel file with a PRE ALLOCATION sheet containing store data</li>
+        <li>The Excel file must have columns for EANCode, SEASON, and store names</li>
+    </ul>
+
+    <h2>Step-by-step instructions:</h2>
+    
+    <div class="step">
+        <p><strong>1. First:</strong> Add your files</p>
+        <ul>
+            <li>Click "Browse..." next to "Stores CSV File" and select your CSV file</li>
+            <li>Click "Browse..." next to "Excel File" and select your Excel file</li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <p><strong>2. Check:</strong> Make sure "PRE ALLOCATION" appears in the "Excel Sheet Name" field</p>
+    </div>
+
+    <div class="step">
+        <p><strong>3. Start:</strong> Click the "Process Files" button</p>
+    </div>
+
+    <div class="step">
+        <p><strong>4. Wait:</strong> The program works through your files</p>
+        <ul>
+            <li>Watch the progress bar at the bottom</li>
+            <li>The log area shows what's happening</li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <p><strong>5. Done:</strong> When finished, a folder opens with your results</p>
+        <ul>
+            <li>Each store has its own Excel file with SEASON sheets</li>
+            <li>Each store-SEASON combination has a TXT file</li>
+        </ul>
+    </div>
+
+    <div class="troubleshooting">
+        <h2>If something goes wrong:</h2>
+        <ul>
+            <li>Make sure your store names match between the CSV and Excel files</li>
+            <li>Check that your Excel file has "EANCode" and "SEASON" columns</li>
+            <li>Look at the log area for error messages</li>
+        </ul>
+    </div>
+
+    <div class="note">
+        <h2>Want to see how it works?</h2>
+        <p>Click "Show Process" in the top-right corner</p>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+venv_plein/
+ENV/
+env/
+
+# Build and Distribution
+build/
+dist/
+*.spec
+*.exe
+*.pkg
+
+# Output directories
+output/
+source/
+stores/
+-p/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+*.log
+

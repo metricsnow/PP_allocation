@@ -1,0 +1,25 @@
+# Philipp Plein Outlet Allocation Tool - User Guide
+
+## Overview
+This application helps you process Excel files for store allocations. 
+
+## Steps to Use
+1. Select a Stores CSV file using the "Browse..." button
+2. Select an Excel file using the "Browse..." button 
+3. Choose an output directory or use the Excel file directory
+4. Enter the sheet name (default is "PRE ALLOCATION")
+5. Click the "PROCESS FILES" button to start processing
+
+## Input Files
+### Stores CSV Format
+The Stores CSV file should contain a list of stores with the following columns:
+- store_name: The name of the store
+
+### Excel File Format
+The Excel file should contain allocation data in the specified sheet name.
+
+## Output
+The application will generate store-specific Excel and TXT files in the output directory.
+
+## Support
+For assistance, please contact the system administrator. 
