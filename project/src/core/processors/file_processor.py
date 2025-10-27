@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Optional, List, Dict, Union
 import pandas as pd
 
-from app.processors.store_processor import process_store
+from src.core.processors.store_processor import process_store
 
 # Setup logging
 logging.basicConfig(

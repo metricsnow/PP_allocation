@@ -25,7 +25,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Import main application class
-from app.ui_pyside6.main_window import ExcelProcessorApp
+from src.ui.main_window import ExcelProcessorApp
 
 def main():
     """Main function that initializes and runs the application."""
@@ -33,30 +33,19 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_dir)
     
-    # Create output directory if it doesn't exist
-    output_dir = Path('output')
-    if not output_dir.exists():
-        output_dir.mkdir()
-        logger.info(f"Created output directory: {output_dir}")
-    
-    # Create source directory if it doesn't exist
-    source_dir = Path('source')
-    if not source_dir.exists():
-        source_dir.mkdir()
-        logger.info(f"Created source directory: {source_dir}")
-    
-    # Create stores directory if it doesn't exist
-    stores_dir = Path('stores')
-    if not stores_dir.exists():
-        stores_dir.mkdir()
-        logger.info(f"Created stores directory: {stores_dir}")
+    # Create data directories if they don't exist
+    for dir_name in ['data/output', 'data/source', 'data/stores']:
+        dir_path = Path(dir_name)
+        if not dir_path.exists():
+            dir_path.mkdir(parents=True)
+            logger.info(f"Created directory: {dir_path}")
     
     # Initialize the PySide6 application
     app = QApplication(sys.argv)
     app.setStyle('Fusion')  # Use Fusion style for a modern look
     
     # Set application icon
-    icon_path = Path("images/logo.png")
+    icon_path = Path("resources/images/logo.png")
     if icon_path.exists():
         app_icon = QIcon(str(icon_path))
         app.setWindowIcon(app_icon)

@@ -37,3 +37,7 @@ Thumbs.db
 # Test files
 *.log
 
+# Framework and Cursor
+.cursor/
+development_framework_v2/
+

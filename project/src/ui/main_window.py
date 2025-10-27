@@ -33,13 +33,13 @@ try:
 except ImportError:
     cairosvg = None
 
-from app.ui_pyside6.utils import (
+from src.ui.utils import (
     load_image_to_pixmap, create_branded_header, 
     load_svg_to_pixmap
 )
 # We'll import these specifically in the methods for better error handling
-# from app.ui_pyside6.templates import show_stores_template, show_excel_template
-from app.processors.file_processor import FileProcessor
+# from src.ui.templates import show_stores_template, show_excel_template
+from src.core.processors.file_processor import FileProcessor
 
 # Setup logging
 logging.basicConfig(
@@ -179,7 +179,7 @@ class ExcelProcessorApp(QMainWindow):
     
     def set_application_icon(self):
         """Set the application icon"""
-        icon_path = Path("images/logo.png")
+        icon_path = Path("resources/images/logo.png")
         if icon_path.exists():
             app_icon = QIcon(str(icon_path))
             self.setWindowIcon(app_icon)

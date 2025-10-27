@@ -145,7 +145,7 @@ def create_branded_header(parent, app_title="Outlet Allocation Tool", version="v
     container_layout.setSpacing(0)
     
     # Main header container - using a simple QLabel directly for minimal overhead
-    jpg_path = Path("images/header.jpg")
+    jpg_path = Path("resources/images/header.jpg")
     if jpg_path.exists():
         pixmap = QPixmap(str(jpg_path))
         if not pixmap.isNull():

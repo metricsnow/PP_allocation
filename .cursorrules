@@ -1,0 +1,81 @@
+# Development Framework v2 - Cursor AI Rules
+
+## Framework-Specific Rules
+- Follow persona switching patterns consistently
+- Maintain state persistence across persona switches  
+- Use quality gates for all persona activations
+- Follow documentation standards (Google style docstrings)
+- Place all documentation in docs/ folder
+- Use lowercase naming for documentation files
+
+## Context Engineering Protocol
+- Use @-symbol for precise context specification
+- Reference specific files: @filename.ts
+- Reference folders: @folder/
+- Reference code symbols: @functionName
+- Always provide explicit context for better AI understanding
+- Enable self-gathering context for dynamic understanding
+- Allow AI to add debugging statements for analysis
+- Support runtime behavior analysis
+
+## Code Standards
+- Use TypeScript strict mode, avoid 'any' type
+- Use functional components with hooks, not class components
+- All async functions must have try-catch blocks
+- Use meaningful variable and function names
+- Add comments for complex business logic only
+- Implement proper logging for debugging
+
+## Security Requirements
+- Validate all user inputs
+- Use parameterized queries
+- Implement OWASP compliance
+- Handle secrets securely
+- NEVER allow direct AI access to critical databases
+- Use deterministic tools for critical infrastructure
+- Always create backups before AI operations
+- Test scripts on cloned data only
+- Maintain awareness of AI non-deterministic nature
+
+## Performance Requirements
+- Optimize database queries
+- Implement caching strategies
+- Monitor performance metrics
+- Use lazy loading where appropriate
+
+## Persona-Specific Guidelines
+- Mission Analyst: Focus on deep research, MCP Context7 integration, web search validation
+- Mission Planner: Emphasize technical architecture, feasibility analysis, task breakdown
+- Mission Executor: Prioritize code implementation, testing, documentation
+- Mission-QA: Focus on quality validation, security review, performance checks
+- Mission Challenger: Emphasize optimization, assumption validation, efficiency improvements
+
+## Documentation Standards
+- All documentation must be in docs/ folder
+- Use lowercase filenames with descriptive names
+- Include comprehensive docstrings (Google style)
+- Cross-reference related documentation
+- Maintain up-to-date README files in subfolders
+
+## Plan Preservation Protocol
+- Include full plans verbatim in stories
+- NEVER summarize or condense technical details
+- Preserve all code examples and specifications
+- Maintain original formatting and structure
+- Ensure complete technical detail preservation
+
+## MCP Integration Protocol
+- Use Context7 for real-time documentation access
+- Access 4000+ open-source libraries documentation
+- Ensure up-to-date information for all implementations
+- Validate against official documentation sources
+- Integrate MCP servers for external tools and data sources
+
+## Quality Gates
+- Pre-execution validation for all personas
+- Post-execution quality assessment
+- Template compliance checking
+- File placement validation
+- Standards compliance verification
+- MCP integration validation
+- Context engineering verification
